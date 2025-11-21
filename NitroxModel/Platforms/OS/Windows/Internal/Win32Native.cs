@@ -98,7 +98,7 @@ internal static class Win32Native
 
     public static bool IsTrusted(string fileName)
     {
-        return WinVerifyTrust(fileName) == 0;
+        return WinVerifyTrust(fileName) == true;
     }
 
     private static uint WinVerifyTrust(string fileName)
